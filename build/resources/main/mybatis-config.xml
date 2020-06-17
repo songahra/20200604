@@ -4,10 +4,12 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <typeAliases>
-        <typeAlias type="com.inzent.domain.AccountDO" alias="AccountDO"/>
+        <typeAlias alias="accountDO" type="com.inzent.domain.AccountDO" />
+        <typeAlias alias="userDO" type="com.inzent.domain.UserDO" />
     </typeAliases>
 
     <mappers>
+        <mapper resource="mybatis/account.xml"/>
         <mapper resource="mybatis/user.xml"/>
     </mappers>
 
